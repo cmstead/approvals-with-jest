@@ -13,7 +13,7 @@ class SomeData {
     }
 
     toString() { 
-        return JSON.stringify(this);
+        return JSON.stringify(this, null, 4);
     }
 }
 

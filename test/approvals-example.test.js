@@ -10,7 +10,18 @@ describe('Example tests with approvals', function () {
 
         approvals.verify({
             value: someDataString,
-            description: 'Testing that approvals behaves as expected'
+            description: 'Verify SomeData can be properly stringified'
+        });
+    });
+
+    it('Verifies SomeData properly generates string from toString method', function () {
+        const newData = new SomeData();
+
+        newData.setValue('hodor', 'HODOR');
+
+        approvals.verify({
+            value: newData.toString(),
+            description: 'Verify toString returns properly stringified value'
         })
     });
 });

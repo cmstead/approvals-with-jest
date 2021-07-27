@@ -1,0 +1,12 @@
+{
+    "foo": "bar",
+    "baz": "quux",
+    "nestedObject": {
+        "prop1": "a property",
+        "prop2": [
+            1,
+            2
+        ]
+    },
+    "hodor": "HODOR"
+}
