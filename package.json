@@ -1,0 +1,24 @@
+{
+  "name": "approvals-with-jest",
+  "version": "1.0.0",
+  "description": "Using approvals with Jest",
+  "main": "index.js",
+  "scripts": {
+    "test-only": "jest ./test",
+    "test": "npm run test-only && gittey commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmstead/approvals-with-jest.git"
+  },
+  "author": "Chris Stead",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmstead/approvals-with-jest/issues"
+  },
+  "homepage": "https://github.com/cmstead/approvals-with-jest#readme",
+  "devDependencies": {
+    "approvals": "^4.0.0-beta.1",
+    "jest": "^27.0.6"
+  }
+}
