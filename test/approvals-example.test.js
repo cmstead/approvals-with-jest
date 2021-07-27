@@ -6,10 +6,8 @@ describe('Example tests with approvals', function () {
     it('Verifies SomeData is stringifiable', function () {
         const newData = new SomeData();
 
-        const someDataString = JSON.stringify(newData, null, 4);
-
-        approvals.verify({
-            value: someDataString,
+        approvals.verifyAsJSON({
+            value: newData,
             description: 'Verify SomeData can be properly stringified'
         });
     });
